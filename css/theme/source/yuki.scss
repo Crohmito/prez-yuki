@@ -47,11 +47,11 @@ $heading1TextShadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b
     padding-bottom: 1em;
 }
 .timeline {
-    margin: 80px 0 0 212px !important;
+    margin: 85px 0 0 100px !important;
     text-align:center;
     .fragment {
         font-size:13px;
-        width: 130px;
+        width: 185px;
         height:10px;
         background:#DB6A3C;
         display:block;
@@ -78,6 +78,7 @@ $heading1TextShadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b
             background: white;
             border-radius: 3em;
             padding: 1em;
+						font-size: 15px;
         }
         &.bottom .text {
             position:absolute;
@@ -97,5 +98,10 @@ $heading1TextShadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b
 }
 
 .yukiImg {
-	width: 35%;  
+	width: 35%;
+}
+
+.reveal .stretch {
+	height: 685px !important;
+
 }
