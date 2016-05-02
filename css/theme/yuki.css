@@ -331,3 +331,7 @@ body {
       top: -90px; }
     .timeline .fragment.top .text {
       bottom: -90px; }
+
+.reveal section img {
+  background: none;
+  margin: 0 auto; }
