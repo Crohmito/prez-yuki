@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/yuki.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background ="img/mosaique.png" data-background-repeat="repeat" data-background-size="50px">
+					<img src="img/logo_Yuki.png" height=65% width=65% style="box-shadow: none; border: none">
+					<p>L'équipe Qwertz</p>
+				</section>
+				<section data-background ="img/mosaique.png" data-background-repeat="repeat" data-background-size="75px">
+					<h2>Notre projet c'est</h2>
+					<ul>
+						<li>10 élèves</li>
+						<li>plus de 11Go de vidéos, images, textes, etc</li>
+						<li>Pour le code: 7 contributeurs / 259 commits / 42,301 lignes de code ajoutées</li>
+						<li>Quelques kilos de pizza</li>
+						<li>Une crêpes party</li>
+						<li>Mais surtout une très belle aventure</li>
+					</ul>
+				</section>
+				<section data-background-video="video_qwertz_v4.mp4"></section>
+				<section data-background ="img/mosaique.png" data-background-repeat="repeat" data-background-size="75px">
+					Timeline
+				</section>
+				<section data-background ="img/mosaique.png" data-background-repeat="repeat" data-background-size="75px">
+					<div class = "stretch">
+     				<iframe width="100%" height="100%" src="http://yuki.qwertz.io"></iframe>
+					</div>
+				</section>
+				<section data-background ="img/mosaique.png" data-background-repeat="repeat" data-background-size="75px">
+
+						<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+				    <script type="text/javascript">
+				      google.charts.load('current', {'packages':['corechart']});
+				      google.charts.setOnLoadCallback(drawChart);
+				      function drawChart() {
+
+				        var data = google.visualization.arrayToDataTable([
+				          ['réseau', 'Nombre d"enfants'],
+				          ['Instagram',     3],
+				          ['SnapChat',      3],
+				          ['Youtube',      18],
+				          ['Whatsapp',  5],
+				          ['Autres', 3],
+				          ['Skype',    18],
+				          ['FaceTime',    13]
+
+				        ]);
+
+				        var options = {
+				          title: 'Réseaux sociaux chez les jeunes de 9-10 ans',
+									backgroundColor: 'transparent'
+				        };
+
+				        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+				        chart.draw(data, options);
+				      }
+				    </script>
+					<h2>Comment faire connaître notre projet ?</h2>
+					<div id="piechart" style="width: 1200px; height: 650px;"></div>
+				</section>
+				<section data-background-video="160422_vid_origamiTest_v1.mp4">Chris et les enfants</section>
+				<section data-background ="img/mosaique.png" data-background-repeat="repeat" data-background-size="75px">
+					<h2>Sur place</h2>
+					<p>simulation</p>
+				</section>
+				<section data-background ="img/mosaique.png" data-background-repeat="repeat" data-background-size="75px">
+					<div class = "stretch">
+     				<iframe width="100%" height="100%" src="http://yuki.qwertz.io/"></iframe>
+					</div>
+				</section>
+				<section data-background ="img/mosaique.png" data-background-repeat="repeat" data-background-size="75px">
+					<h1>Conclusion</h1>
+					<img src="img/yuki_content.png" height=50% width=50% style="box-shadow: none; border: none;">
+
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
