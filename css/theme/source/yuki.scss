@@ -37,3 +37,51 @@ $heading1TextShadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
+
+
+.reveal .timeline-title {
+    padding-bottom: 1em;
+}
+.timeline {
+    margin-top: 2em;
+    text-align:center;
+    .fragment {
+        font-size:13px;
+        width: 130px;
+        height:10px;
+        background:#DB6A3C;
+        display:block;
+        float:left;
+        position:relative;
+        &:before { // barres
+            content: " ";
+            width:3px;
+            height:60px;
+            background:#DB6A3C;
+            display:block;
+            position:absolute;
+            left: 50%;
+        }
+        &.top:before {
+            top:0px;
+        }
+        &.bottom:before {
+            bottom:0px;
+        }
+        .text {
+            position:absolute;
+            display:block;
+            background: white;
+            border-radius: 3em;
+            padding: 1em;
+        }
+        &.bottom .text {
+            position:absolute;
+            display:block;
+            top:-90px;
+        }
+        &.top .text {
+            bottom: -90px;
+        }
+    }
+}

@@ -31,17 +31,26 @@
 				<section data-background ="img/mosaique.png" data-background-repeat="repeat" data-background-size="75px">
 					<h2>Notre projet c'est</h2>
 					<ul>
-						<li>10 élèves</li>
-						<li>plus de 11Go de vidéos, images, textes, etc</li>
-						<li>Pour le code: 7 contributeurs / 259 commits / 42,301 lignes de code ajoutées</li>
-						<li>Quelques kilos de pizza</li>
-						<li>Une crêpes party</li>
-						<li>Mais surtout une très belle aventure</li>
+						<li class="fragment">10 élèves</li>
+						<li class="fragment">plus de 11Go de vidéos, images, textes, etc</li>
+						<li class="fragment">Pour le code: 7 contributeurs / 259 commits / 6'579 lignes de code ajoutées</li>
+						<li class="fragment">Quelques kilos de pizza</li>
+						<li class="fragment">Une crêpes party</li>
+						<li class="fragment">Mais surtout une très belle aventure</li>
 					</ul>
 				</section>
 				<section data-background-video="video_qwertz_v4.mp4"></section>
 				<section data-background ="img/mosaique.png" data-background-repeat="repeat" data-background-size="75px">
-					Timeline
+					<h2 class="timeline-title">Timeline</h2>
+                    <div class="timeline">
+                        <div class="t1 fragment top"><span class="text">Communication dans le groupe</span></div>
+                        <div class="t2 fragment bottom"><span class="text">Oublis de sauvegarde</span></div>
+                        <div class="t3 fragment top"><span class="text">Soucis de santé et absences</span></div>
+                        <div class="t4 fragment bottom"><span class="text">Concentration sur le projet</span></div>
+                        <div class="t5 fragment top"><span class="text"></span></div>
+                        <div class="t6 fragment bottom"><span class="text"></span></div>
+                        <div class="t7 fragment top"><span class="text"></span></div>
+                    </div>
 				</section>
 				<section data-background ="img/mosaique.png" data-background-repeat="repeat" data-background-size="75px">
 					<div class = "stretch">
@@ -52,31 +61,33 @@
 
 						<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 				    <script type="text/javascript">
-				      google.charts.load('current', {'packages':['corechart']});
-				      google.charts.setOnLoadCallback(drawChart);
-				      function drawChart() {
+                    (function() {
+                        google.charts.load('current', {'packages':['corechart']});
+                        google.charts.setOnLoadCallback(drawChart);
+                        function drawChart() {
 
-				        var data = google.visualization.arrayToDataTable([
-				          ['réseau', 'Nombre d"enfants'],
-				          ['Instagram',     3],
-				          ['SnapChat',      3],
-				          ['Youtube',      18],
-				          ['Whatsapp',  5],
-				          ['Autres', 3],
-				          ['Skype',    18],
-				          ['FaceTime',    13]
+                          var data = google.visualization.arrayToDataTable([
+                            ['réseau', 'Nombre d"enfants'],
+                            ['Instagram',     3],
+                            ['SnapChat',      3],
+                            ['Youtube',      18],
+                            ['Whatsapp',  5],
+                            ['Autres', 3],
+                            ['Skype',    18],
+                            ['FaceTime',    13]
 
-				        ]);
+                          ]);
 
-				        var options = {
-				          title: 'Réseaux sociaux chez les jeunes de 9-10 ans',
-									backgroundColor: 'transparent'
-				        };
+                          var options = {
+                            title: 'Réseaux sociaux chez les jeunes de 9-10 ans',
+                                      backgroundColor: 'transparent'
+                          };
 
-				        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+                          var chart = new google.visualization.PieChart(document.getElementById('piechart'));
 
-				        chart.draw(data, options);
-				      }
+                          chart.draw(data, options);
+                        }
+                    })();
 				    </script>
 					<h2>Comment faire connaître notre projet ?</h2>
 					<div id="piechart" style="width: 1200px; height: 650px;"></div>
