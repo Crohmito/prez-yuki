@@ -11,7 +11,7 @@
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
-
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 		<!-- Printing and PDF exports -->
 		<script>
 			var link = document.createElement( 'link' );
@@ -31,25 +31,23 @@
 				<section data-background ="img/mosaique.png" data-background-repeat="repeat" data-background-size="75px">
 					<h2>Notre projet c'est</h2>
 					<ul>
-						<li class="fragment">10 élèves</li>
-						<li class="fragment">plus de 11Go de vidéos, images, textes, etc</li>
-						<li class="fragment">Pour le code: 7 contributeurs / 259 commits / 6'579 lignes de code ajoutées</li>
-						<li class="fragment">Quelques kilos de pizza</li>
-						<li class="fragment">Une crêpes party</li>
-						<li class="fragment">Mais surtout une très belle aventure</li>
+						<li class="fragment space-li">10 étudiants</li>
+						<li class="fragment space-li">+ de 11Go de contenu</li>
+						<li class="fragment space-li">Pour le code: 7 contributeurs / 259 commits / 6'579 lignes de code ajoutées</li>
+						<li class="fragment space-li">Quelques kilos de pizza</li>
+						<li class="fragment space-li">Une crêpe-party</li>
+						<li class="fragment space-li">Mais surtout une très belle aventure</li>
 					</ul>
 				</section>
 				<section data-background-video="video_qwertz_v4.mp4"></section>
 				<section data-background ="img/mosaique.png" data-background-repeat="repeat" data-background-size="75px">
-					<h2 class="timeline-title">Timeline</h2>
+					<!-- TODO: centrer timeline -->
+					<h2 class="timeline-title">Obstacles et résolution</h2>
                     <div class="timeline">
                         <div class="t1 fragment top"><span class="text">Communication dans le groupe</span></div>
-                        <div class="t2 fragment bottom"><span class="text">Oublis de sauvegarde</span></div>
-                        <div class="t3 fragment top"><span class="text">Soucis de santé et absences</span></div>
-                        <div class="t4 fragment bottom"><span class="text">Concentration sur le projet</span></div>
-                        <div class="t5 fragment top"><span class="text"></span></div>
-                        <div class="t6 fragment bottom"><span class="text"></span></div>
-                        <div class="t7 fragment top"><span class="text"></span></div>
+                        <div class="t2 fragment bottom"><span class="text">Problèmes techniques</span></div>
+                        <div class="t3 fragment top"><span class="text">Ressources humaines	</span></div>
+                        <div class="t4 fragment bottom"><span class="text">Complexité générale du projet</span></div>
                     </div>
 				</section>
 				<section data-background ="img/mosaique.png" data-background-repeat="repeat" data-background-size="75px">
@@ -58,44 +56,53 @@
 					</div>
 				</section>
 				<section data-background ="img/mosaique.png" data-background-repeat="repeat" data-background-size="75px">
+					<div class = "stretch">
+						<iframe width="100%" height="100%" src="http://yuki.qwertz.io/admin"></iframe>
+					</div>
+				</section>
+				<section data-background ="img/mosaique.png" data-background-repeat="repeat" data-background-size="75px">
+					<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+					<script type="text/javascript">
+					$( document ).ready(function() {
 
-						<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-				    <script type="text/javascript">
-                    (function() {
-                        google.charts.load('current', {'packages':['corechart']});
-                        google.charts.setOnLoadCallback(drawChart);
-                        function drawChart() {
+												google.charts.load('current', {'packages':['corechart']});
+												google.charts.setOnLoadCallback(drawChart);
+												function drawChart() {
 
-                          var data = google.visualization.arrayToDataTable([
-                            ['réseau', 'Nombre d"enfants'],
-                            ['Instagram',     3],
-                            ['SnapChat',      3],
-                            ['Youtube',      18],
-                            ['Whatsapp',  5],
-                            ['Autres', 3],
-                            ['Skype',    18],
-                            ['FaceTime',    13]
+													var data = google.visualization.arrayToDataTable([
+														['réseau', 'Nombre d"enfants'],
+														['Instagram',     3],
+														['Youtube',      18],
+														['SnapChat',      3],
+														['Whatsapp',  5],
+														['Autres', 3],
+														['Skype',    18],
+														['FaceTime',    13]
 
-                          ]);
+													]);
 
-                          var options = {
-                            title: 'Réseaux sociaux chez les jeunes de 9-10 ans',
-                                      backgroundColor: 'transparent'
-                          };
+													var options = {
+														title: 'Réseaux sociaux chez les jeunes de 9-10 ans',
+																			backgroundColor: 'transparent'
+													};
 
-                          var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+													var chart = new google.visualization.PieChart(document.getElementById('piechart'));
 
-                          chart.draw(data, options);
-                        }
-                    })();
-				    </script>
-					<h2>Comment faire connaître notre projet ?</h2>
+													chart.draw(data, options);
+												}
+											});
+ 					</script>
+
+
+
+					<h2>Comment faire connaître le projet ?</h2>
 					<div id="piechart" style="width: 1200px; height: 650px;"></div>
 				</section>
 				<section data-background-video="160422_vid_origamiTest_v1.mp4">Chris et les enfants</section>
 				<section data-background ="img/mosaique.png" data-background-repeat="repeat" data-background-size="75px">
 					<h2>Sur place</h2>
-					<p>simulation</p>
+					<!-- TODO: Flyer -->
+					<img src="img/yuki_content.png" height=50% width=50% style="box-shadow: none; border: none;">
 				</section>
 				<section data-background ="img/mosaique.png" data-background-repeat="repeat" data-background-size="75px">
 					<div class = "stretch">
