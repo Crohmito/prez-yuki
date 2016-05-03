@@ -342,3 +342,19 @@ body {
 
 .reveal .stretch {
   height: 685px !important; }
+
+.icons {
+  clear: both;
+  width: 100%;
+  margin-top: 50px !important; }
+  .icons .icon {
+    float: left;
+    font-size: 18px;
+    width: 20%; }
+    .icons .icon p {
+      width: 90%;
+      margin: 0 auto; }
+    .icons .icon img {
+      margin-bottom: 15px;
+      width: 60%;
+      height: 60%; }

@@ -105,3 +105,23 @@ $heading1TextShadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b
 	height: 685px !important;
 
 }
+
+.icons {
+	clear: both;
+	width: 100%;
+	margin-top: 50px !important;
+	.icon {
+		float: left;
+		font-size: 18px;
+		width: 20%;
+		p {
+			width: 90%;
+			margin: 0 auto;
+		}
+		img {
+			margin-bottom: 15px;
+			width: 60%;
+			height: 60%;
+		}
+	}
+}
