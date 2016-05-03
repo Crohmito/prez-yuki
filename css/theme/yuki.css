@@ -358,3 +358,6 @@ body {
       margin-bottom: 15px;
       width: 60%;
       height: 60%; }
+
+#piechart {
+  margin-top: -50px; }
